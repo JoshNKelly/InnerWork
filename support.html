@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerWork — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #fbfbfd;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        header {
+            margin-bottom: 48px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e5e5ea;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #34c759, #30d158);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .app-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #86868b;
+            letter-spacing: 0.02em;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #86868b;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        p {
+            font-size: 16px;
+            color: #424245;
+            margin-bottom: 16px;
+        }
+
+        .card {
+            background: #f5f5f7;
+            border-radius: 14px;
+            padding: 24px;
+            margin: 16px 0;
+        }
+
+        .card h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #34c759 0%, #30d158 100%);
+            border-radius: 14px;
+            padding: 28px;
+            margin: 32px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        .contact-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 16px;
+        }
+
+        .contact-box a {
+            display: inline-block;
+            background: white;
+            color: #1d1d1f;
+            font-weight: 600;
+            padding: 12px 28px;
+            border-radius: 24px;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            background: rgba(255,255,255,0.9);
+            text-decoration: none;
+        }
+
+        .crisis-banner {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+
+        .crisis-banner h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #664d03;
+        }
+
+        .crisis-banner p {
+            font-size: 15px;
+            color: #664d03;
+            margin-bottom: 4px;
+        }
+
+        .crisis-banner a {
+            color: #664d03;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5ea;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #1c1c1e; color: #f5f5f7; }
+            h1, h2 { color: #f5f5f7; }
+            .card h3 { color: #f5f5f7; }
+            p { color: #a1a1a6; }
+            .app-name, .subtitle { color: #a1a1a6; }
+            header, footer { border-color: #38383a; }
+            .card { background: #2c2c2e; }
+            footer p { color: #a1a1a6; }
+            .crisis-banner { background: #3a3000; border-color: #665200; }
+            .crisis-banner h3, .crisis-banner p { color: #ffd60a; }
+            .crisis-banner a { color: #ffd60a; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-badge">
+                <div class="app-icon">&#x1F9E0;</div>
+                <span class="app-name">InnerWork</span>
+            </div>
+            <h1>Support</h1>
+            <p class="subtitle">We're here to help you get the most out of InnerWork.</p>
+        </header>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="card">
+            <h3>Is my data private?</h3>
+            <p>Yes. All data stays on your device (or your personal iCloud if sync is enabled). We don't have servers, we don't collect analytics, and we never share your data. Read our full <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+
+        <div class="card">
+            <h3>How do I delete my data?</h3>
+            <p>Open the app, go to Settings, then Data Privacy. You can delete data by category or remove all data at once. Deleting the app also removes all local data.</p>
+        </div>
+
+        <div class="card">
+            <h3>How do I export my data?</h3>
+            <p>Go to Settings, then Data Export. Select the categories you'd like to export, and the app will create a JSON file you can save or share via the standard iOS share sheet.</p>
+        </div>
+
+        <div class="card">
+            <h3>Does the app replace therapy?</h3>
+            <p>No. InnerWork is a self-help tool based on evidence-based cognitive behavioral therapy techniques. It is not a substitute for professional mental health care. If you're struggling, please reach out to a licensed therapist or counselor.</p>
+        </div>
+
+        <div class="card">
+            <h3>How do I sync across devices?</h3>
+            <p>Go to Settings and enable iCloud sync. Your encrypted data will sync across all your devices signed into the same Apple ID. No account creation needed.</p>
+        </div>
+
+        <div class="card">
+            <h3>What worksheets are included?</h3>
+            <p>The app includes 24 guided worksheets covering CBT (Thought Record, Mood Journal, Activity Schedule, and more), Sleep (Sleep Diary, Sleep Hygiene, Sleep Restriction, Stimulus Control), ACT (Values Clarification, Values Card Sort), DBT (Emotion Regulation), and Positive Psychology (Gratitude Journal, Best Possible Self, Three Good Things, and more).</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Need more help?</h3>
+            <p>We typically respond within 24 hours.</p>
+            <a href="mailto:hiinnerwork@gmail.com">Email Support</a>
+        </div>
+
+        <div class="crisis-banner">
+            <h3>In Crisis?</h3>
+            <p>If you or someone you know is in immediate danger, please call emergency services (911) or contact:</p>
+            <p><a href="tel:988">988 Suicide &amp; Crisis Lifeline</a> — Call or text 988</p>
+            <p><a href="sms:741741&body=HELLO">Crisis Text Line</a> — Text HOME to 741741</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 InnerWork. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
