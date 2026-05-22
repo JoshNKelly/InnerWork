@@ -3,193 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InnerWork — Privacy Policy</title>
+    <title>Privacy Policy — InnerWork</title>
+    <meta name="description" content="InnerWork's privacy policy. Mental health data stays on your device, encrypted. No tracking, no ads, no servers.">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
+        :root {
+            --text: #1c1c1e;
+            --text-secondary: #3a3a3c;
+            --background: #ffffff;
+            --background-alt: #f2f2f7;
+            --accent: #5856d6;
+            --border: #d1d1d6;
+            --max-width: 720px;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #ffffff;
+                --text-secondary: #ebebf5;
+                --background: #1c1c1e;
+                --background-alt: #2c2c2e;
+                --border: #38383a;
+            }
+        }
+        * { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.7;
-            color: #1d1d1f;
-            background: #fbfbfd;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+            color: var(--text);
+            background: var(--background);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-
-        .container {
-            max-width: 720px;
+        main {
+            max-width: var(--max-width);
             margin: 0 auto;
-            padding: 60px 24px 80px;
+            padding: 48px 24px 96px;
         }
-
-        header {
-            margin-bottom: 48px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid #e5e5ea;
-        }
-
-        .app-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 20px;
-        }
-
-        .app-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            background: linear-gradient(135deg, #34c759, #30d158);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: white;
-        }
-
-        .app-name {
-            font-size: 15px;
-            font-weight: 600;
-            color: #86868b;
-            letter-spacing: 0.02em;
-        }
-
         h1 {
-            font-size: 36px;
+            font-size: 2.2rem;
             font-weight: 700;
+            margin: 0 0 8px;
             letter-spacing: -0.02em;
-            margin-bottom: 8px;
         }
-
-        .updated {
-            font-size: 14px;
-            color: #86868b;
+        .meta {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 40px;
         }
-
         h2 {
-            font-size: 20px;
+            font-size: 1.4rem;
             font-weight: 600;
-            margin-top: 36px;
-            margin-bottom: 10px;
-            color: #1d1d1f;
+            margin: 48px 0 16px;
+            letter-spacing: -0.01em;
         }
-
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 28px 0 12px;
+        }
         p {
-            font-size: 16px;
-            color: #424245;
-            margin-bottom: 16px;
+            margin: 0 0 16px;
+            color: var(--text-secondary);
         }
-
-        .highlight-box {
-            background: #f5f5f7;
-            border-radius: 14px;
-            padding: 20px 24px;
-            margin: 24px 0;
+        ul, ol {
+            color: var(--text-secondary);
+            padding-left: 24px;
+            margin: 0 0 16px;
         }
-
-        .highlight-box p {
-            margin-bottom: 0;
-            font-size: 15px;
+        li {
+            margin-bottom: 6px;
         }
-
-        .highlight-box strong {
-            color: #1d1d1f;
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 40px 0;
         }
-
-        footer {
-            margin-top: 60px;
-            padding-top: 24px;
-            border-top: 1px solid #e5e5ea;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 13px;
-            color: #86868b;
-        }
-
-        footer a {
-            color: #0071e3;
+        a {
+            color: var(--accent);
             text-decoration: none;
         }
-
-        footer a:hover {
+        a:hover {
             text-decoration: underline;
         }
-
-        @media (prefers-color-scheme: dark) {
-            body { background: #1c1c1e; color: #f5f5f7; }
-            h1, h2 { color: #f5f5f7; }
-            p { color: #a1a1a6; }
-            .app-name { color: #a1a1a6; }
-            .updated { color: #a1a1a6; }
-            header, footer { border-color: #38383a; }
-            .highlight-box { background: #2c2c2e; }
-            .highlight-box strong { color: #f5f5f7; }
-            footer p { color: #a1a1a6; }
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        code {
+            font-family: "SF Mono", Menlo, Consolas, monospace;
+            font-size: 0.9em;
+            background: var(--background-alt);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .short-version {
+            background: var(--background-alt);
+            border-left: 3px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+        }
+        .short-version p:last-child {
+            margin-bottom: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="app-badge">
-                <div class="app-icon">&#x1F9E0;</div>
-                <span class="app-name">InnerWork</span>
-            </div>
-            <h1>Privacy Policy</h1>
-            <p class="updated">Effective date: March 10, 2026</p>
-        </header>
+<main>
 
-        <h2>Overview</h2>
-        <p>InnerWork is designed with your privacy in mind. Your mental health data is personal and sensitive, and we treat it with the highest level of care. This policy explains what data the app collects, how it is stored, and your rights regarding that data.</p>
+<h1>Privacy Policy</h1>
+<p class="meta"><strong>Effective Date:</strong> May 21, 2026 &middot; <strong>Last Updated:</strong> May 21, 2026</p>
 
-        <div class="highlight-box">
-            <p><strong>The short version:</strong> Your data stays on your device. We don't have servers, we don't collect analytics, and we don't share or sell anything. Period.</p>
-        </div>
+<h2>Overview</h2>
+<p>InnerWork ("the App", "we", "us", or "our") is a mental wellness companion app that provides evidence-based therapeutic tools including cognitive behavioral therapy (CBT), dialectical behavior therapy (DBT), acceptance and commitment therapy (ACT), and positive psychology worksheets, mood tracking, guided exercises, and clinical assessments.</p>
+<p>We designed InnerWork with your privacy as the central priority. Mental health data is among the most sensitive personal information you have, and we treat it accordingly. This Privacy Policy explains what data the App collects, how it is stored and protected, what choices you have, and your rights regarding that data.</p>
 
-        <h2>Data We Collect</h2>
-        <p>InnerWork collects only the data you actively enter into the app, including mood journal entries, thought records, sleep diary entries, activity schedules, and other worksheet responses. The app also records usage metrics such as streak counts and last-used dates to support your progress tracking.</p>
+<div class="short-version">
+<p><strong>The short version:</strong> Everything you enter into InnerWork stays on your device, encrypted. We do not operate any servers that store your content, we do not use analytics or advertising tools, and we do not share your data with anyone. If you enable iCloud sync, your encrypted data syncs through your personal iCloud account — to which only you have access.</p>
+</div>
 
-        <h2>Encryption &amp; Storage</h2>
-        <p>All your data is stored locally on your device. If you enable iCloud sync, your encrypted data is stored in your personal iCloud account. We do not operate any external servers and have no access to your data.</p>
-        <p>Encryption uses AES-256-GCM when the passcode feature is enabled, with the key stored securely in the iOS Keychain.</p>
+<hr>
 
-        <h2>HealthKit Integration</h2>
-        <p>If you grant permission, the app may read health data (such as sleep and activity metrics) from Apple HealthKit to provide personalized insights. This data is never sent off your device. The app may also write mindfulness session data back to HealthKit. You can revoke HealthKit access at any time in iOS Settings.</p>
+<h2>Information We Collect</h2>
+<p>InnerWork collects only the information you actively provide to the App. This includes:</p>
+<ul>
+<li><strong>Worksheet entries</strong> — your responses to mood journals, thought records, sleep diaries, gratitude entries, behavioral experiments, exposure hierarchies, and other therapeutic worksheets you choose to complete</li>
+<li><strong>Self-assessment responses</strong> — your answers to standardized clinical screening tools (PHQ-9, GAD-7, K-10, PCL-5, DASS-21, AUDIT, PANAS, AIS) if you choose to take them</li>
+<li><strong>Tracker entries</strong> — meals, water, exercise, sleep, caffeine, alcohol, and medication entries that you log</li>
+<li><strong>Personal preferences</strong> — name (if you choose to enter it), goals, focus areas, tracker visibility settings, notification preferences, and theme choices that you configure during onboarding or in Settings</li>
+<li><strong>App usage signals stored locally</strong> — streak counts, last-used dates, achievement progress, and other usage statistics used to power your progress tracking and motivation features</li>
+</ul>
+<p><strong>We do not collect:</strong></p>
+<ul>
+<li>Account information (the App does not require an account)</li>
+<li>Email addresses, phone numbers, or other contact identifiers (unless you optionally enter your therapist's email for report sharing)</li>
+<li>Payment information (the App does not include in-app purchases)</li>
+<li>Device identifiers, advertising IDs, or fingerprinting data</li>
+<li>Crash reports, telemetry, or usage analytics</li>
+<li>Location history (see Location Data below for the limited, on-device use of approximate location)</li>
+</ul>
 
-        <h2>Location Data</h2>
-        <p>If you grant permission, the app may access your approximate location to fetch local weather and environmental data for mood analytics. Location data is used transiently and is never stored or transmitted to any third party.</p>
+<hr>
 
-        <h2>Biometric Data</h2>
-        <p>If you enable Face ID or Touch ID, biometric authentication is handled entirely by iOS. The app never accesses, stores, or transmits biometric data. Authentication results are a simple success or failure response.</p>
+<h2>How Your Data Is Stored and Protected</h2>
 
-        <h2>Speech Recognition</h2>
-        <p>If you use voice journaling, Apple's on-device speech recognition transcribes your spoken words into text. Audio recordings are not stored by the app and transcription happens locally on your device.</p>
+<h3>Local Storage and Encryption</h3>
+<p>All worksheet entries, assessment responses, tracker entries, and journal content are stored locally on your device in iOS's standard application storage. Sensitive data is encrypted at rest using AES-256-GCM symmetric encryption. The encryption key is generated on-device and stored securely in the iOS Keychain, protected by the device's Secure Enclave on supported hardware.</p>
+<p>This encryption applies regardless of whether you have enabled a passcode or biometric lock on the App itself. Your data is protected even if your device is lost, stolen, or your iOS account is otherwise compromised — only the device's encryption keys can decrypt it.</p>
 
-        <h2>Data Sharing</h2>
-        <p>We do not sell, share, or transmit your data to any third parties. The only data sharing occurs when you explicitly choose to export a report or share a weekly summary, and you control the sharing destination through the standard iOS share sheet.</p>
+<h3>Optional iCloud Sync</h3>
+<p>If you choose to enable iCloud sync for the App (controlled via your device's iOS Settings under iCloud → Apps Using iCloud), your encrypted data files are stored in your personal iCloud Drive container. iCloud sync is provided by Apple, not by InnerWork. Apple's privacy practices govern how iCloud handles your data. We have no access to your iCloud storage.</p>
+<p>Even when synced to iCloud, your data remains encrypted with your local encryption key.</p>
 
-        <h2>Analytics &amp; Advertising</h2>
-        <p>InnerWork does not include any third-party analytics SDKs, advertising frameworks, or tracking tools. We do not collect usage analytics beyond what Apple provides through App Store Connect, which is anonymous and aggregated.</p>
+<h3>App Lock (Face ID / Touch ID / Passcode)</h3>
+<p>If you enable Face ID, Touch ID, or a passcode lock for the App, that authentication is handled entirely by iOS. The App never accesses, stores, or transmits your biometric data. Authentication results to us are a simple success or failure signal.</p>
 
-        <h2>HIPAA &amp; GDPR</h2>
-        <p>For U.S. users, we follow HIPAA guidelines for protecting health information. For users in the EU, we comply with the GDPR. You have the right to access, correct, and erase your personal data. Use the Data Privacy section in Settings to export or delete your data.</p>
+<hr>
 
-        <h2>Data Deletion</h2>
-        <p>You can delete individual entries from within the app at any time. To delete all app data, remove the app from your device. If iCloud sync is enabled, you can also delete app data from iCloud via iOS Settings &gt; Apple ID &gt; iCloud &gt; Manage Storage.</p>
+<h2>HealthKit Integration</h2>
+<p>If you grant permission, InnerWork can read health data from Apple HealthKit to provide personalized mood and wellness insights. The types of data the App may read include:</p>
+<ul>
+<li>Sleep data (duration, stages, efficiency, bedtime, wake time)</li>
+<li>Activity data (steps, exercise minutes, calories burned, workout intensity)</li>
+<li>Heart rate data (heart rate, heart rate variability, resting heart rate)</li>
+<li>Vital signs (blood oxygen saturation, blood pressure)</li>
+<li>Other metrics (blood glucose, body temperature, menstrual cycle phase, mindful minutes)</li>
+</ul>
+<p>The App may also write mindfulness session data back to HealthKit when you complete guided breathing, body scan, or meditation exercises.</p>
+<p>HealthKit data accessed by the App is never transmitted off your device. It is used to compute correlations between your physical health metrics and your mood, displayed on screen, and optionally included in PDFs you generate to share with your therapist.</p>
+<p>You can revoke HealthKit access at any time in <strong>iOS Settings → Health → Data Access &amp; Devices → InnerWork</strong>.</p>
 
-        <h2>Children's Privacy</h2>
-        <p>InnerWork is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided data through the app, please contact us so we can take appropriate action.</p>
+<hr>
 
-        <h2>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. Any changes will be reflected in the app and on this page with an updated effective date. We encourage you to review this policy periodically.</p>
+<h2>Location Data</h2>
+<p>If you grant permission, InnerWork can access your approximate location (region-level, not precise GPS) to fetch local weather and environmental data — temperature, daylight hours, air quality, pollen, and similar metrics — for the optional mood correlation analysis.</p>
+<ul>
+<li>Location data is used transiently and is not stored beyond the duration of a single weather lookup.</li>
+<li>Your location is sent to Open-Meteo (a free weather service) solely to retrieve weather data for that location. See "Third-Party Services" below.</li>
+<li>You can revoke location access at any time in <strong>iOS Settings → Privacy &amp; Security → Location Services → InnerWork</strong>.</li>
+<li>If you do not grant location access, the App functions normally without weather features.</li>
+</ul>
 
-        <h2>Contact</h2>
-        <p>If you have any questions about this privacy policy or your data, please contact us at <a href="mailto:hiinnerwork@gmail.com">hiinnerwork@gmail.com</a>.</p>
+<hr>
 
-        <footer>
-            <p>&copy; 2026 InnerWork. All rights reserved.</p>
-            <p><a href="support.html">Support</a></p>
-        </footer>
-    </div>
+<h2>Speech Recognition (Voice Journaling)</h2>
+<p>If you use the voice journaling feature, your spoken words are transcribed to text using Apple's on-device speech recognition (<code>Speech</code> framework with <code>requiresOnDeviceRecognition</code> enabled). Audio recordings are not stored by the App, and transcription happens locally on your device — your voice is not transmitted to Apple's servers or anywhere else.</p>
+<p>You can revoke speech recognition permission in <strong>iOS Settings → Privacy &amp; Security → Speech Recognition</strong>.</p>
+
+<hr>
+
+<h2>Notifications</h2>
+<p>If you grant permission, InnerWork may send local notifications to remind you about:</p>
+<ul>
+<li>Scheduled journaling check-ins</li>
+<li>Bedtime preparation if you have configured a sleep schedule</li>
+<li>Mindfulness reminders if you have enabled them</li>
+<li>Overdue backups (more than 30 days since your last encrypted backup)</li>
+<li>Streak reminders if you are at risk of breaking a daily streak</li>
+</ul>
+<p>All notifications are generated entirely on your device using <code>UNUserNotificationCenter</code> and <code>UNCalendarNotificationTrigger</code>. The App does not send push notifications through any server. You can disable individual notification categories or all notifications at any time in <strong>More → Settings → Notifications &amp; Reminders → Manage Notifications</strong>, or in <strong>iOS Settings → Notifications → InnerWork</strong>.</p>
+
+<hr>
+
+<h2>Spotlight Search and Widgets</h2>
+<p>InnerWork indexes worksheet <em>titles</em> (not content) in Apple's Spotlight search so you can find entries from your iOS home screen. Entry content is never included in the Spotlight index.</p>
+<p>If you add an InnerWork home-screen or lock-screen widget, the widget displays summary information such as your current streak count, the most recent mood you logged, and a 7-day mood trend. Widget data is shared between the App and the widget extension via a private iOS App Group container — it never leaves your device.</p>
+
+<hr>
+
+<h2>Data Sharing</h2>
+<p>We do not sell your data. We do not share your data with advertisers, data brokers, or any third party for marketing purposes.</p>
+<p>The App provides several features that allow <strong>you</strong> to share your own data, at your initiative:</p>
+<ul>
+<li><strong>Therapist Report (PDF)</strong> — You can generate a PDF summarizing your worksheet activity, assessment scores, and mood trends, then choose to email or AirDrop it. The recipient and method are entirely your choice.</li>
+<li><strong>Encrypted backup files</strong> — You can create <code>.innerwork-backup</code> files containing your data and share them via email, cloud storage, or AirDrop. These backups are encrypted with the same AES-256-GCM encryption used in the App. Anyone who restores the backup will have access to all data it contains, so share backup files only with people or services you trust.</li>
+<li><strong>CSV data export</strong> — You can export your raw entries as CSV files for personal records or use in other tools.</li>
+<li><strong>iOS Share Sheet</strong> — Throughout the App, sharing buttons trigger the standard iOS share sheet, which lets you choose the destination (Messages, Mail, AirDrop, etc.). You are always in control of where your data goes.</li>
+</ul>
+
+<hr>
+
+<h2>Analytics and Advertising</h2>
+<p>InnerWork does not include any third-party analytics SDKs, advertising frameworks, or tracking tools. There is no Firebase Analytics, no Mixpanel, no Amplitude, no AppsFlyer, no Facebook SDK — none of the common tracking libraries.</p>
+<p>The App does not collect usage analytics beyond what Apple provides through App Store Connect. App Store Connect data is anonymous, aggregated, and visible only to the developer; we do not receive any individually identifiable information through it.</p>
+
+<hr>
+
+<h2>Third-Party Services</h2>
+<p>InnerWork relies on the following third-party services. Each is used in a limited, well-defined capacity:</p>
+<ul>
+<li><strong>Apple iCloud (CloudKit)</strong> — Optional encrypted storage of your data if you enable iCloud sync. Governed by Apple's privacy policy.</li>
+<li><strong>Apple HealthKit</strong> — Optional access to health metrics if you grant permission. Data stays on your device.</li>
+<li><strong>Apple Speech Recognition (on-device)</strong> — Voice journaling transcription, performed on your device.</li>
+<li><strong>Apple Notifications</strong> — Local notifications scheduled on your device.</li>
+<li><strong>Open-Meteo</strong> (<a href="https://open-meteo.com">open-meteo.com</a>) — Free weather data service. The App sends your approximate location coordinates to Open-Meteo to retrieve weather conditions. Open-Meteo's privacy policy is available on their website. No personally identifying information is sent to Open-Meteo.</li>
+</ul>
+<p>No other external services are contacted by the App.</p>
+
+<hr>
+
+<h2>Children's Privacy</h2>
+<p>InnerWork is not directed to children under 13, and we do not knowingly collect personal information from children under 13. The App contains content related to mental health, including discussions of stress, anxiety, depression, sleep, and crisis resources, that is generally intended for users age 17 and older.</p>
+<p>If you are a parent or guardian and believe a child under 13 has used the App, please contact us at the email below. Because the App does not have an account system and stores data only on the device, the most direct way to remove a child's data is to delete the App from the device.</p>
+
+<hr>
+
+<h2>Your Rights and Choices</h2>
+<p>You have full control over your data within the App. The App provides multiple ways to access, export, and delete your information:</p>
+<ul>
+<li><strong>View your data</strong> — All entries are visible within their respective worksheet views in the App.</li>
+<li><strong>Export your data</strong> — Use <strong>More → Settings → Data &amp; Privacy → Export Raw Data</strong> to download CSV files of your entries.</li>
+<li><strong>Delete individual entries</strong> — Swipe-to-delete on any saved entry in any worksheet's history list.</li>
+<li><strong>Delete by category</strong> — Use <strong>More → Settings → Data &amp; Privacy</strong> to delete all entries of a specific worksheet type at once.</li>
+<li><strong>Delete everything</strong> — Use <strong>More → Settings → Data &amp; Privacy → Delete All Data</strong> to erase all entries, settings, and stored preferences in a single action.</li>
+<li><strong>Remove iCloud data</strong> — Open <strong>iOS Settings → [Your Name] → iCloud → Manage Account Storage</strong>, find InnerWork, and tap Delete Data.</li>
+<li><strong>Uninstall the App</strong> — Removing InnerWork from your device deletes all local data immediately.</li>
+</ul>
+
+<h3>Rights Under GDPR (European Union and United Kingdom)</h3>
+<p>If you reside in the European Union or United Kingdom, you have the following rights under the General Data Protection Regulation and the UK GDPR:</p>
+<ul>
+<li>The right to access your data</li>
+<li>The right to rectify (correct) inaccurate data</li>
+<li>The right to erase your data ("right to be forgotten")</li>
+<li>The right to restrict processing</li>
+<li>The right to data portability</li>
+<li>The right to object to processing</li>
+<li>The right to lodge a complaint with a supervisory authority</li>
+</ul>
+<p>Because InnerWork stores all data on your device, you can exercise the first six rights directly within the App using the tools listed above. To raise concerns about how we handle data more broadly, contact us at the email below.</p>
+
+<h3>Rights Under the California Consumer Privacy Act (CCPA)</h3>
+<p>If you reside in California, you have the right to know what personal information we collect, the right to delete that information, and the right to opt out of the sale or sharing of personal information. We do not sell or share personal information. All other rights are exercisable through the in-App data controls listed above.</p>
+
+<hr>
+
+<h2>Data Retention</h2>
+<p>We do not store your data on any server we operate, so we have no central retention policy in the traditional sense. Your data persists on your device (and in your iCloud account, if you enabled iCloud sync) for as long as you keep the App installed and choose to keep the data. You can delete data at any time using the tools described above.</p>
+<p>Deleted data is removed immediately from local storage. If iCloud sync is enabled, deletions propagate to your iCloud account.</p>
+
+<hr>
+
+<h2>Security</h2>
+<p>We protect your data using the following practices:</p>
+<ul>
+<li>AES-256-GCM encryption at rest for all sensitive worksheet content</li>
+<li>Encryption keys stored in the iOS Keychain, hardware-protected on devices with the Secure Enclave</li>
+<li>No external server infrastructure to compromise</li>
+<li>No third-party analytics or advertising libraries that could leak data</li>
+<li>Optional App-level Face ID, Touch ID, or passcode lock</li>
+<li>Encrypted backup files (<code>.innerwork-backup</code>) when you choose to export</li>
+</ul>
+<p>No method of electronic storage or transmission is 100% secure. While we have made every reasonable effort to protect your data, we cannot guarantee its absolute security. If you become aware of a security issue with the App, please contact us at the email below.</p>
+
+<hr>
+
+<h2>Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect changes to the App, our practices, or applicable law. When we make material changes, we will update the "Last Updated" date at the top of this document and update the in-App Privacy Policy at the same time. For substantive changes, we may also notify you within the App.</p>
+<p>We encourage you to review this Privacy Policy periodically.</p>
+
+<hr>
+
+<h2>Contact</h2>
+<p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
+<ul>
+<li><strong>Email:</strong> <a href="mailto:hiinnerwork@gmail.com">hiinnerwork@gmail.com</a></li>
+<li><strong>Website:</strong> <a href="https://innerwork.app">innerwork.app</a></li>
+</ul>
+<p>We aim to respond to all privacy-related inquiries within 30 days.</p>
+
+<hr>
+
+<h2>Disclaimer</h2>
+<p>InnerWork is a self-help and educational tool. It is not a medical device, does not provide medical advice, and is not a substitute for professional mental health care. If you are in crisis or experiencing a mental health emergency, please contact a crisis line, your healthcare provider, or emergency services.</p>
+<p>In the United States, you can reach the 988 Suicide &amp; Crisis Lifeline by calling or texting <strong>988</strong>. The App also includes a Crisis Support button (red, top of the More tab) with direct access to hotlines and your personal safety plan if you have created one.</p>
+
+</main>
 </body>
 </html>
